@@ -1,14 +1,11 @@
 import pandas as pd
 import numpy as np
-# import seaborn as sns
 import plotly.graph_objs as go
 from statsmodels.tsa.stattools import adfuller
 from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 from statsmodels.tsa.seasonal import seasonal_decompose
 from statsmodels.tsa.arima.model import ARIMA
-from matplotlib import pyplot as plt
 from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
-from matplotlib import pyplot as plt
 import streamlit as st
 from shillelagh.backends.apsw.db import connect
 import warnings
