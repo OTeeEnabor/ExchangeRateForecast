@@ -37,12 +37,12 @@ df_exchange['Date'] = pd.to_datetime(df_exchange['Date'])
 df_exchange.set_index('Date',inplace=True)
 currency_list = ['ZAR','MUR','KSH','NGN','MZM','BPU']
 arima_orders_dic = {
-    'ZAR':(2,2,1),
+    'ZAR':(2,1,2),
     'MUR': (2,1,1),
-    'KSH': (2,3,1),
-    'NGN': (2,3,1),
-    'MZM': (18,3,1),
-    'BPU': (3,2,1)
+    'KSH': (2,1,3),
+    'NGN': (2,1,3),
+    'MZM': (1,1,1),
+    'BPU': (3,1,2)
 
 }
 # initialize an empty df for weekly resample
